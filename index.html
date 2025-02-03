@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Battala Ravi Krishna</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Ravi Krishna</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/display.jpg" alt="Profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+
+      <h1 class="title">Battala Ravi Krishna</h1>
+
+
+      <p class="section__text__p2">
+        <span class="title-large section-subtitle">
+          <span class="typing-animation" id="developer-title"></span>
+        </span>
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/RAVI_KRISHNA_BATTALA.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-2" onclick="window.open('./assets/Experience_letter.pdf')">
+          Experience
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/ravi-krishna-battala-4a3060226/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/ravikrishnabattala'" />
+        <img src="./assets/docker.png" alt="My Docker profile" class="icon"
+          onclick="location.href='https://hub.docker.com/u/ravikrishna1269'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/comtek.png" alt="https://www.linkedin.com/company/comtek_2/" class="icon"
+              onclick="location.href='https://cmtk.net/'" />
+            <h3>Experience</h3>
+            <p>2 years <br />QA Automation Engineer</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/college.png" alt="https://www.linkedin.com/school/svcetirupati/" class="icon"
+              onclick="location.href='https://svce.edu.in/'" />
+            <h3>Education</h3>
+            <p>Bachelor of Technology<br />Compute Science & Engineering</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Quality Assurance Specialist with 1.5+ years of experience, focusing on both backend and frontend systems.
+            During his tenure as a full-time contractor at Comtek International Inc., Ravi contributed to ensuring the
+            stability and efficiency of the automation process for Caterpillar Inc.'s database cloud service, Helios.
+            His responsibilities included conducting regression and sanity tests for new and existing features,
+            enhancing automation scripts using Java, and designing and executing comprehensive test plans. Ravi also
+            conducted manual validations and gained experience in using AWS services for monitoring, debugging, and
+            troubleshooting.
+          </p>
+          <br />
+          <p>
+            Proficient in API automation testing, test automation, and manual testing, Ravi is skilled in Java, Spring
+            Boot, Karate, and Cucumber frameworks. He has a strong understanding of database technologies and cloud
+            platforms and is experienced in leveraging CI/CD pipelines. Ravi excels in identifying and resolving test
+            issues, collaborating effectively with developers to improve application performance. A quick learner, he is
+            adaptable to new challenges and technologies, consistently improving the quality of the systems he works on.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/java.webp" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/python.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/C.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/gherkin.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Gherkin</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/DSA.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Data Structures </h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frameworks</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/springboot.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Spring Boot</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/karate.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Karate</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/spring.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Spring</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/hibernate.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Hibernate</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/maven.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Maven</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/junit.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Junit</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/testng.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TestNG</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/selenium.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Selenium</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/playwright.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Playwright</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/kafka.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>kafka</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/rabbitmq.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>RabbitMQ</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/postman.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Postman</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/okta.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Okta</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/sleuth.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Sleuth</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/zipkin.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Zipkin</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/netflix.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Eureka</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/openfeign.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>OpenFeign</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Architecture & Cloud Platforms</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/microservice.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Microservice</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/azure.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Azure</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/aws.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AWS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/snowflake.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Snowflake</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">DevOps Tools & Pluigns</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/devops.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Azure DevOps</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/docker1.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Docker</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/pipeline.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CI/CD Pipelines</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/testplans.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Test Plans</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/lombok.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Lombok</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/gherkin.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Cucumber for Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Database Management & Version Control</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/mySQL.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/postgresql.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/github.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Github</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/swagger.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Swagger</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/html.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Html</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/css.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/js.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Design & Collaboration Tools:</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/figma.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Figma</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/confluence.jpg" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Confluence</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Customer Master</h2>
+          <div class="btn-container">
+            <p> Customer Master project was designed to streamline the onboarding and management of organizations,
+              including active, drafted, and dealer organizations. The primary objective was to facilitate the
+              assignment of users to customers through APIs, ensuring seamless data flow and efficient system
+              integration. Given the scale and complexity of customer data, the project required robust automation and
+              integration with cloud services to enhance accuracy and efficiency.</p>
+          </div>
+          <br>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://mycustomer.cat.com/home-page'">
+            Site
+          </button>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <br>
+          <br>
+          <h2 class="experience-sub-title project-title">ED Retirement</h2>
+          <div class="btn-container">
+            <p>ED-Retirement project was aimed at modernizing and replacing the existing data flow with enhanced
+              business rules across multiple data pathways. The project focused on improving the efficiency of asset
+              onboarding, customer and dealer attachment, subscription management, and IoT gateway registration through
+              API-driven automation. The objective was to ensure seamless integration of these processes while
+              maintaining data accuracy and optimizing system performance.</p>
+
+          </div>
+          <br>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://www.cat.com/en_US/support/technology/equipment-management.html'">
+            Site
+          </button>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.jpg" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Parts Cat Com</h2>
+          <div class="btn-container">
+            <p>CUOB UI project was focused on front-end UI testing to ensure a seamless user experience in applications
+              like Parts Cat Com and Vision Link. The project aimed to validate user access flows, including creating
+              users through email invitations or direct user requests from the platforms. By leveraging Playwright,
+              automated test scripts were executed to verify UI functionality, interactions, and performance.
+              Additionally, results were monitored and reported using CloudWatch and integrated into ADO Test Results
+              for tracking</p>
+
+          </div>
+
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://parts.cat.com/en/catcorp'">
+            Site
+          </button>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.jpg" alt="Project 4" class="project-img" />
+          </div>
+          <br>
+          <br>
+          <h2 class="experience-sub-title project-title">Foresight</h2>
+          <div class="btn-container">
+
+            <p>Foresight project is designed to collect, analyze, and provide insights on fault data, fluid data, and
+              work data from assets enrolled in the Foresight program. By leveraging data analytics, the project aims to
+              enhance predictive maintenance and optimize asset performance. The system processes large volumes of
+              transit data, generating actionable recommendations for users based on real-time insights.</p>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://foresight.cat.com/'">
+            Site
+          </button>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:ravikrishnabattala5@gmail.com">ravikrishnabattala5@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/ravi-krishna-battala-4a3060226/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Ravi Krishna. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
