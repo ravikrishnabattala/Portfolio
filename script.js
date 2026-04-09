@@ -28,3 +28,17 @@ function typeText(text, index) {
 }
 
 cycleTitles(); // Start the cycling
+
+function toggleDropdown() {
+  document.getElementById("experienceDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) {
+    const dropdown = document.getElementById("experienceDropdown");
+    if (dropdown && dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    }
+  }
+}

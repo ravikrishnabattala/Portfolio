@@ -57,9 +57,19 @@
         <button class="btn btn-color-2" onclick="window.open('./assets/RAVI_KRISHNA_BATTALA.pdf')">
           Download CV
         </button>
-        <button class="btn btn-color-2" onclick="window.open('./assets/Experience_letter.pdf')">
-          Experience
-        </button>
+<!--        <button class="btn btn-color-2" onclick="window.open('./assets/Experience_letter.pdf')">-->
+<!--          Experience-->
+<!--        </button>-->
+        <!-- Experience Dropdown -->
+        <div class="dropdown">
+          <button class="btn btn-color-2" onclick="toggleDropdown()">
+            Experience ▼
+          </button>
+          <div id="experienceDropdown" class="dropdown-content">
+            <a href="./assets/Comtek_International.pdf" target="_blank">Comtek International</a>
+            <a href="./assets/AI_Infotech.pdf" target="_blank">AI Infotech</a>
+          </div>
+        </div>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
           Contact Info
         </button>
@@ -87,13 +97,13 @@
             <img src="./assets/aiinfotech.png" alt="https://www.linkedin.com/company/comtek_2/" class="icon"
                  onclick="location.href='https://aiinfotech.co.in/'" />
             <h3>Experience</h3>
-            <p>11 months<br/>QA Automation Engineer <br/>Full-Time Employee</p>
+            <p>1.1 years<br/>QA Automation Engineer <br/>Full-Time Employee</p>
           </div>
           <div class="details-container">
             <img src="./assets/comtek.png" alt="https://www.linkedin.com/company/comtek_2/" class="icon"
               onclick="location.href='https://cmtk.net/'" />
             <h3>Experience</h3>
-            <p>1.9 years <br/>QA Automation Engineer<br/> Full time Contractor</p>
+            <p>2 years <br/>QA Automation Engineer<br/> Full time Contractor</p>
           </div>
           <div class="details-container">
             <img src="./assets/college.png" alt="https://www.linkedin.com/school/svcetirupati/" class="icon"
@@ -260,13 +270,13 @@
                 <p>Experienced</p>
               </div>
             </article>
-<!--            <article>-->
-<!--              <img src="./assets/okta.png" alt="Experience icon" class="icon" />-->
-<!--              <div>-->
-<!--                <h3>Okta</h3>-->
-<!--                <p>Intermediate</p>-->
-<!--              </div>-->
-<!--            </article>-->
+            <article>
+              <img src="./assets/bruno.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bruno</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
 <!--            <article>-->
 <!--              <img src="./assets/sleuth.jpg" alt="Experience icon" class="icon" />-->
 <!--              <div>-->
