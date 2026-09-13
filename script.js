@@ -8,7 +8,7 @@ function toggleMenu() {
 // typing animation
 
 const titleElement = document.getElementById('developer-title');
-const titles = ["Full Stack Developer", "QA Automation Test Engineer"]; // Add other titles you want to cycle through
+const titles = ["Full Stack Developer", "Senior QA Automation Engineer"]; // Add other titles you want to cycle through
 let currentIndex = 0;
 
 function cycleTitles() {
