@@ -1,0 +1,24 @@
+<div id="chatbot" class="chatbot">
+  <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Open chat" aria-expanded="false">
+    🕷️
+  </button>
+  <section id="chat-window" class="chat-window" aria-hidden="true">
+    <header class="chat-header">
+      <span class="chat-title">Want to Know Me? Let’s Chat.</span>
+    </header>
+    <div id="chat-messages" class="chat-messages">
+      <div class="message message--bot">
+        <p>Hi! Looking for something about Krishna? Just ask me anything!</p>
+      </div>
+    </div>
+    <div id="chat-typing" class="chat-typing" hidden>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <form id="chat-form" class="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Ask something..." maxlength="500" required>
+      <button type="submit" id="chat-send" class="chat-send">➤</button>
+    </form>
+  </section>
+</div>

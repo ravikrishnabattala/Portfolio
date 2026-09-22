@@ -598,6 +598,37 @@
     <p>Copyright &#169; 2024 Ravi Krishna. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+
+  <div id="chatbot-container"></div>
+  <script>
+    fetch("chatbot/chat.html")
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById("chatbot-container").innerHTML = html;
+
+              const link = document.createElement("link");
+              link.rel = "stylesheet";
+              link.href = "chatbot/chat.css";
+              document.head.appendChild(link);
+
+              const script = document.createElement("script");
+              script.src = "chatbot/chat.js";
+
+              script.onload = () => {
+                console.log("chat.js loaded");
+                window.initChatbot();
+              };
+
+              script.onerror = () => {
+                console.error("chat.js failed to load");
+              };
+
+              document.body.appendChild(script);
+            })
+            .catch(error => {
+              console.error("Chatbot loading failed:", error);
+            });
+  </script>
 </body>
 
 </html>
