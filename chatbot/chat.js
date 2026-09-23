@@ -79,7 +79,7 @@ class ChatWidget {
   }
 
   async getBotReply(message) {
-    const response = await fetch("http://localhost:8080/chat", {
+    const response = await fetch("https://python-ai-backend-jet.vercel.app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
